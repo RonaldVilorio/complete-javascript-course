@@ -341,6 +341,21 @@ TEST DATA BONUS 2: Dolphins score 97, 112 and 101. Koalas score 109, 95 and 106
 
 GOOD LUCK 😀
 */
+const dolphins = [96,108,89];
+const koalas = [88,91,110];
+
+const findAvg = (team)=>{
+  return team.reduce((acc,score)=>acc+score,0)/team.length
+}
+const dolphinsAvg = findAvg(dolphins)
+const koalasAvg = findAvg(koalas)
+
+console.log(dolphinsAvg > koalasAvg ? dolphinsAvg : koalasAvg)
+
+
+
+
+
 
 /*
 // const scoreDolphins = (96 + 108 + 89) / 3;
